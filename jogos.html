@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta os jogos de futebol de hoje e vê os palpites com base em inteligência artificial. Dados atualizados em tempo real.">
+    <meta name="keywords" content="jogos de hoje, futebol ao vivo, palpites jogos, IA futebol">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/apple-touch-icon_gqzhfs.png">
+      <link rel="shortcut icon" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301348/favicon_loha0d.ico" type="image/x-icon">
+      <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-32x32_dp90xh.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-16x16_gzbszp.png">
+      <link rel="manifest" href="https://res.cloudinary.com/dwqr0ioiv/raw/upload/v1760301347/site_vnsvsl.webmanifest">
+    <title>Jogos da Semana</title>
+    <link rel="stylesheet" href="Estilos/style.css" media="all">
+    <link rel="stylesheet" href="Estilos/jogos.css">
+</head>
+<body>
+    <header>
+         <section class="header-content">
+              <h1 class="nome-site"><a hreflang="Pt" href="index.html" target="_self" rel="homepage">Futebol Predictor</a></h1>
+              <button aria-label="Menu-burguer" class="btn-menu" onclick="clickMobile()"> <span class="lnh"></span><span class="lnh lnh-ii"></span><span class="lnh lnh-iii"></span></button>
+              <nav class="menu" id="itens">
+                <button aria-label="Menu-burguer-cancel" class="btn-cancel btn-menu" onclick="clickMobile()"><span class="lnh-cancel"></span><span class="lnh-cancel lnh-cancel-i"></span></button>
+                <ul class="menu-content">
+                    <li class="menu_li"><a class="menu_link" hreflang="Pt" href="index.html" target="_self" rel="prev">Inicio</a></li>
+                    <li class="menu_li"><a class="menu_link" hreflang="Pt" href="#" target="_top">Jogos</a></li>
+                    <li class="menu_li"><a class="menu_link" hreflang="Pt" href="prever.html" target="_self" rel="next">Prever</a></li>
+                    <li class="menu_li"><a class="menu_link" hreflang="Pt" href="sobre.html" target="_self" rel="next">Sobre</a></li>
+                </ul>
+                <div class="direito"><a href="https://github.com/yuranmahige" target="_blank" rel="external"><p>Futebol Predictor&copy; <span id="ano"></span> </p></a></div>
+              </nav>
+         </section> 
+         <div class="search-area"><input class="input-search" type="search" id="pesquisar-global" autocomplete="on" placeholder="Pesquisar jogo"> <label class="pesquisa-ico" for="pesquisar-global"><img src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760630651/search_shhzxd.svg" alt="pesquisar"></label></div>
+    </header>
+    <main class="jogos">
+      <h1 class="titulo">Jogos da Semana</h1>
+      <p id="status" class="loading"><span class="spinner"></span> A carregar jogos...</p>
+      <div id="content"></div>
+    </main>
+    <script defer>
+  const dataAtual = new Date();
+ const anoAtual = dataAtual.getFullYear();
+ document.getElementById('ano').textContent = anoAtual;
+ function clickMobile() { if( itens.style.display == 'block'){ itens.style.display = 'none'
+}else{itens.style.display = 'block'} }
+    </script>
+</body>
+</html>

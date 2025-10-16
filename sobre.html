@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o FutPredictor: um projeto que utiliza IA para prever resultados de jogos de futebol. Transparência e dados em tempo real.">
+    <meta name="keywords" content="palpites de futebol, previsões futebol, inteligência artificial, premier league, la liga, Serie A, La Liga, Bundesliga, Liga Portugal, champions, IA futebol"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/apple-touch-icon_gqzhfs.png">
+        <link rel="shortcut icon" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301348/favicon_loha0d.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-32x32_dp90xh.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-16x16_gzbszp.png">
+        <link rel="manifest" href="https://res.cloudinary.com/dwqr0ioiv/raw/upload/v1760301347/site_vnsvsl.webmanifest">
+    <title>Sobre o Futebol Predictor</title>
+    <link rel="stylesheet" href="Estilos/style.css" media="all">
+    <link rel="stylesheet" href="Estilos/sobre.css">
+</head>
+<body>
+    <header>
+        <section class="header-content">
+            <h1 class="nome-site"><a hreflang="Pt" href="index.html" target="_self" rel="homepage">Futebol Predictor</a></h1>
+            <button aria-label="Menu-burguer" class="btn-menu" onclick="clickMobile()"> <span class="lnh"></span><span class="lnh lnh-ii"></span><span class="lnh lnh-iii"></span></button>
+            <nav class="menu" id="itens">
+            <button aria-label="Menu-burguer-cancel" class="btn-menu btn-cancel" onclick="clickMobile()"><span class="lnh-cancel"></span><span class="lnh-cancel lnh-cancel-i"></span></button>
+            <ul class="menu-content">
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="index.html" target="_self" rel="prev">Inicio</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="jogos.html" target="_self" rel="prev">Jogos</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="prever.html" target="_self" rel="prev">Prever</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="#" target="_top">Sobre</a></li>
+            </ul>
+            <div class="direito"><a href="https://github.com/yuranmahige" target="_blank" rel="external"><p>Futebol Predictor&copy;</p></a></div>
+            </nav>
+        </section> 
+        <div class="search-area"><input class="input-search" type="search" id="pesquisar-global" autocomplete="on" placeholder="Pesquisar jogo"> <label class="pesquisa-ico" for="pesquisar-global"><img src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760630651/search_shhzxd.svg" alt="pesquisar"></label></div>
+    </header>
+    <main class="sobre">
+        <section class="size"><h1 class="titulo">Futebol Predictor</h1><p>Bem-vindo ao <strong class="str">FutPredictor</strong>, o teu novo aliado nas previsões de futebol! Somos uma plataforma dedicada a fornecer <strong class="str">palpites precisos</strong>, com base em dados reais, estatísticas atualizadas e <strong class="str">inteligência artificial</strong> avançada.</p><p>Aqui, tecnologia e paixão pelo futebol juntam-se para te dar as melhores análises de jogos, dia após dia.</p></section> 
+            <section class="section section_i"> 
+                <div class="sub-section ajuste"><h2>O que fazemos</h2><p>O <strong class="destaque">FutPredictor</strong> analisa milhares de dados em segundos para prever os possíveis desfechos das partidas. A nossa IA considera:</p>
+                        <ul>
+                            <li class="analise">Forma atual das equipas</li>
+                            <li class="analise">Resultados anteriores</li>
+                            <li class="analise">Estatísticas ofensivas e defensivas</li>
+                            <li class="analise">Local do jogo (casa/fora)</li>
+                            <li class="analise">Ausência de jogadores importantes</li>
+                            <li class="analise">Tendências históricas</li>
+                        </ul>
+                    <p>Com estas informações, entregamos <strong class="destaque">palpites automatizados e imparciais</strong>, baseados em probabilidades reais.</p>
+                </div>
+            </section> 
+            <section class="section section_ii">
+                <h2>Ligas que cobrimos</h2>
+               <section class="ligas">
+                    <article class="sub-section slide"><h3>Premier League (Inglaterra)</h3><p class="block">A liga inglesa é uma das mais competitivas do mundo. A nossa IA analisa dados de equipas como Manchester City, Arsenal, Liverpool e Manchester United para gerar previsões sempre atualizadas.</p></article>
+                    <article class="sub-section slide"><h3>Serie A (Itália)</h3><p class="block">O campeonato italiano é marcado pela tática e pelo equilíbrio. Clubes como Juventus, Inter de Milão, AC Milan e Napoli estão entre os mais analisados pelas nossas previsões.</p></article>
+                    <article class="sub-section slide"><h3>La Liga (Espanha)</h3><p class="block">O futebol espanhol é conhecido pela técnica e pela posse de bola. Acompanhe as análises detalhadas de jogos com Real Madrid, Barcelona, Atlético de Madrid e outras equipas de destaque.</p></article>
+                    <article class="sub-section slide"><h3>Bundesliga (Alemanha)</h3><p class="block">A Bundesliga é famosa pela intensidade e pela eficiência. A IA avalia constantemente o desempenho de clubes como Bayern de Munique, Borussia Dortmund e RB Leipzig.</p></article>
+                    <article class="sub-section slide"><h3>Liga Betclic Portugal</h3><p class="block">O futebol português está sempre em destaque. O nosso sistema acompanha equipas como FC Porto, Benfica, Sporting CP e SC Braga, com previsões baseadas em dados e estatísticas reais.</p></article>
+                    <article class="sub-section slide"><h3>Ligue 1 (França)</h3><p class="block">A liga francesa ganhou força nos últimos anos, com clubes como Paris Saint-Germain, Lyon e Marseille a lutar por cada ponto. As previsões cobrem todos os jogos principais da época.</p></article>
+                    <article class="sub-section slide"><h3>Eredivisie (Países Baixos)</h3><p class="block">O campeonato neerlandês é um celeiro de talento e golos. Equipas como Ajax, PSV e Feyenoord estão no radar da nossa IA para previsões precisas e rápidas.</p></article>
+                    <article class="sub-section slide"><h3>Brasileirão Série A (Brasil)</h3><p class="block">A liga brasileira é uma das mais imprevisíveis. O sistema analisa o desempenho de clubes como Flamengo, Palmeiras, Corinthians e São Paulo para gerar previsões ajustadas à realidade do futebol sul-americano.</p></article>
+                    <article class="sub-section slide"><h3>Championship (Inglaterra - 2ª divisão)</h3><p class="block">A segunda divisão inglesa é intensa e equilibrada. As previsões abrangem jogos decisivos de clubes tradicionais que lutam pelo regresso à Premier League.</p></article>
+                    <article class="sub-section slide"><h3>Liga Europa (UEFA Europa League)</h3><p class="block">A competição secundária da UEFA também está coberta. Acompanhe as previsões das equipas que buscam o título europeu e uma vaga na Champions League.</p></article>
+                    <article class="sub-section slide"><h3>Liga dos Campeões (UEFA Champions League)</h3><p class="block">A mais prestigiada competição de clubes do mundo. Desde a fase de grupos até à final, as previsões incluem estatísticas e análises detalhadas de cada confronto.</p></article>
+                    <article class="sub-section slide"><h3>Mundial de Futebol (World Cup)</h3> <p class="block">A competição mais aguardada do planeta também é analisada pela IA. De seleções africanas a europeias, cada jogo recebe previsões detalhadas e baseadas em probabilidades reais.</p></article>
+                </section>
+            </section>
+        <section class="ajuste"> 
+            <h2 class="titulo">Porque confiar no FutPredictor?</h2> 
+                <ul>
+                    <li class="analise"><strong class="str">IA de última geração</strong>: Aprendizado contínuo para melhorar as previsões</li>
+                    <li class="analise"><strong class="str">Dados fiáveis</strong>: Fontes estatísticas actualizadas em tempo real</li>
+                    <li class="analise"><strong class="str">Interface simples</strong>: Consulta palpites em poucos cliques</li>
+                    <li class="analise"><strong class="str">Foco em transparência</strong>: Mostramos as probabilidades reais para cada resultado (1X2)</li>
+                </ul>
+        </section> 
+        <section class="section"><div class="ajuste"><h2>Nota importante</h2><p>Os palpites fornecidos pelo FutPredictor são baseados em dados estatísticos e modelos preditivos. Não garantimos resultados, e os conteúdos não devem ser considerados como incentivo a apostas. Joga com responsabilidade.</p></div></section> 
+        <section class="ajuste"><h2>Junta-te à comunidade</h2><p>Explora agora as previsões actualizadas, acompanha as ligas que mais gostas e descobre como a inteligência artificial pode mudar a forma como vês o futebol.</p><a class="btn" hreflang="Pt" href="jogos.html">Ver Palpites de Hoje</a></section> 
+    </main>
+    <footer>
+        <section class="size">
+            <article cl><p class="txt-foot">Somos uma plataforma dedicada a fornecer palpites precisos, com base em dados reais, estatísticas atualizadas e inteligência artificial avançada.</p></article>
+            <hr>
+            <p class="ygm"><a href="https://github.com/yuranmahige" target="_blank" rel="external">Futebol Predictor&copy; <span id="ano"></span></a></p>
+            <div class="social"><a href=" https://www.facebook.com/profile.php?id=100063618374465" target="_blank" rel="external noopener noreferrer"><abbr title="Facebook"><img class="social-media" loading="lazy" src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/Facebook_Logo_Primary_nrklxu.png" alt="Facebook"></abbr></a><a href="https://www.instagram.com/fut_predictor" target="_blank" rel="external noopener noreferrer"><abbr title="Instagram"><img class="social-media" loading="lazy" src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301348/Instagram_Glyph_Gradient_wqa5ej.png" alt="Instagram"></abbr></a><a href="https://x.com/futxpredictor" target="_blank" rel="external noopener noreferrer"><abbr title="X (twitter)"><img class="social-media" loading="lazy" src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301348/logo-black_jr2bhq.png" alt="X (twitter)"></abbr></a></div>
+        </section>
+    </footer>
+    <script defer src="script.js"></script>
+</body>
+</html>

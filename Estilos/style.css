@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --primaria: #1C824B;
+    --destaque: #53e296ea;
+    --azul:#007BFF;
+    --cinza: #ececec;
+    --menu: #fefefec1;
+    --branco: #fefefe;
+    --corpo: #f8f8f8;
+    --nome-site: "Bebas Neue", sans-serif;
+}
+
+/* GERAIS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    background-color: var(--corpo);
+
+&::-webkit-scrollbar { width: 8px; }
+&::-webkit-scrollbar-track {background: #f1f1f1; }
+&::-webkit-scrollbar-thumb { background: #888; border-radius: 4px; }
+&::-webkit-scrollbar-thumb:hover { background: #555; }
+}
+
+
+
+p, ul{
+    margin-block: 1.8em;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+}
+
+a{ text-decoration: none;color: inherit;}
+ul{ list-style: none;}
+/* ESTILO PARA cabecalho Mobile*/
+header{position: relative; background-color: var(--primaria); height: 7.7em;}
+.header-content{
+    display: flex;
+    align-items: center;
+    padding-top: 1.5em;
+}.nome-site{
+    margin-left: 10px; 
+    font-family: var(--nome-site);
+    font-weight: 400;
+    color: var(--branco); 
+    width: 100%;
+    cursor: pointer;
+}
+.search-area{
+    position: relative;
+    float: right;
+    height: 40px;
+    padding-left: 10px;
+    margin-right: 1em;
+    margin-top: 1em;
+    max-width: 350px;
+    width: 100%;
+}.input-search{
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+}
+.input-search:focus{
+    outline: 2px solid var(--destaque);
+}
+.pesquisa-ico > img{width: 100%;}
+.pesquisa-ico{
+    position: absolute;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--cinza);
+}
+.menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    font-size: 1.2em;
+    color: var(--menu);
+    background-color: rgb(2, 71, 48);
+    transition: .3s;
+    z-index: 1000;
+}.menu_link:hover{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff31;
+    transition: .1s ease-in;
+}.lnh{
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: var(--menu);
+}.lnh-cancel{
+    display: block;
+    width: 4px;
+    height: 30px;
+    margin: 10px;
+    transform: rotate(45deg);
+    background-color: var(--menu);
+}.btn-menu{ 
+    border: none; 
+    background-color: transparent; 
+    cursor: pointer;
+    margin-right: 1em;
+}
+.menu_link{ width: 100%; display: block; &:active{font-weight: bold;}}
+.menu_li{ margin-bottom: 1em;}
+.menu-content{  margin: 3em .5em;}
+.btn-cancel{ float: right;}
+.lnh-cancel-i{ transform: rotate(-45deg) translate(28px, -28px); }
+.destaque{ color: var(--destaque);} 
+
+/* GERAIS PARA PAGINAS */
+.section{
+    position: relative;
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+    background: #000000 no-repeat center center/cover;
+    color: var(--branco);
+}.sub-section{ 
+    padding: 10px;
+    margin-top: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgba(135, 206, 250, 0.3);
+    background-color: rgba(0, 0, 0, 0.503);
+}.btn{
+    background:var(--azul); font-size: 1em; color: #fff; border: none; text-align: center;
+    padding: 15px; border-radius: 6px; cursor: pointer; margin-top: 15px;
+    &:hover{ background: #0056b3; }
+    }
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    50%{transform: translateX(-550%);}
+    100%{transform: translateX(-1190%);}
+}
+.ligas{ display: flex;overflow-x: scroll; padding-block: 2em; &::-webkit-scrollbar{display: none;} }
+.slide{ animation: slide 90s infinite alternate;}
+.ligas > .sub-section{ margin-left: 1.5em;}
+.block{ width: 18em; display: block;}
+.section_ii{background: url('https://res.cloudinary.com/dwqr0ioiv/image/upload/q_auto,f_auto/v1759948504/abigail-keenan-8-s5QuUBtyM-mob_ihxyuk.webp') top center/cover;}
+
+/* rodape */
+footer{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    font-size: var(--fonte-foot);
+    background-color: var(--cinza);
+}
+.social-media{
+    margin-inline: 10px; 
+    &:hover{transform: translateY(-1px); border: 2px solid rgba(0, 0, 0, 0.229); border-radius: 50%; transition: .3s ease-in-out;}
+}
+.size{ max-width: 1200px; margin-inline:auto;}
+.artigo{ margin-bottom: 2em;}
+.ygm{display: inline; font-family: var(--nome-site);}
+.social{display: inline; float: right; margin: .5em; transition: 6ms ease-in-out;}
+
+
+/* Medias queries */
+@media  screen and (min-width: 992px) {
+    header{padding-inline: 2em;}
+    .nome-site, .menu_li, .menu-content{ margin: 0;}
+    .btn-menu, .direito{display: none;}
+    .menu-content{float: right;}
+    .menu_li{ display: inline-block; margin-right: 1em; }
+    .menu{
+        position: static;
+        display: block;
+        height: 0;
+        width: 100%;
+        padding: 0;
+        color:#fefefef3 ;
+    }
+    .search-area{
+        position: absolute;
+        right: 35%;
+        top: 2em;
+    }
+    @keyframes slide {
+    0%{transform: translateX(0%);}
+    50%{transform: translateX(-530%);}
+    100%{transform: translateX(-950%);}
+    }
+}

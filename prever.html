@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Análise e prognóstico detalhado de um jogo específico de futebol, gerado por inteligência artificial.">
+  <meta name="keywords" content="análise de jogo, previsão detalhada, prognóstico futebol, IA, palpite, FutPredictor"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/apple-touch-icon_gqzhfs.png">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301348/favicon_loha0d.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-32x32_dp90xh.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760301347/favicon-16x16_gzbszp.png">
+    <link rel="manifest" href="https://res.cloudinary.com/dwqr0ioiv/raw/upload/v1760301347/site_vnsvsl.webmanifest">
+  <title>Prever jogos de futebol</title>
+  <link rel="stylesheet" href="Estilos/style.css">
+  <link rel="stylesheet" href="Estilos/prever.css">
+</head>
+<body>
+  <header>
+          <section class="header-content">
+            <h1 class="nome-site"><a hreflang="Pt" href="index.html" target="_self" rel="homepage">Futebol Predictor</a></h1>
+            <button aria-label="Menu-burguer" class="btn-menu" onclick="clickMobile()"> <span class="lnh"></span><span class="lnh lnh-ii"></span><span class="lnh lnh-iii"></span></button>
+            <nav class="menu" id="itens">
+            <button aria-label="Menu-burguer-cancel" class="btn-menu btn-cancel" onclick="clickMobile()"><span class="lnh-cancel"></span><span class="lnh-cancel lnh-cancel-i"></span></button>
+            <ul class="menu-content">
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="index.html" target="_self" rel="prev">Inicio</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="jogos.html" target="_self" rel="prev">Jogos</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="#" target="top">Prever</a></li>
+                <li class="menu_li"><a class="menu_link" hreflang="Pt" href="sobre.html" target="_self" rel="next">Sobre</a></li>
+            </ul>
+            <div class="direito"><a href="https://github.com/yuranmahige" target="_blank" rel="external"><p>Futebol Predictor&copy; <span id="ano"></span> </p></a></div>
+            </nav>
+          </section> 
+          <div class="search-area"><input class="input-search" type="search" id="pesquisar-global" autocomplete="on" placeholder="Pesquisar jogo"> <label class="pesquisa-ico" for="pesquisar-global"><img src="https://res.cloudinary.com/dwqr0ioiv/image/upload/v1760630651/search_shhzxd.svg" alt="pesquisar"></label></div>
+    </header>
+  <div id="tokenCounter" class="tokenCounter">💎 Tokens: 3/3</div>
+  <main>
+    <section>
+      <form id="form" class="formulario">
+        <div><input class="box" type="number" id="id-jogo" required placeholder="Digite o ID da partida"/></div>
+        <div><input type="submit" value="Gerar previsão" class="btn" id="generateBtn"/></div>
+        <p class="info">Tens 3 tokens válidos por dia. Jogos já previstos não gastam tokens.</p>
+      </form>
+      <div id="resultado"></div>
+    </section>
+    </main>
+    <!-- Modal fullscreen -->
+    <div id="previsaoModal" class="modal">
+      <div class="modal-content" id="modalContent">
+        <span class="close" id="closeModal">&times;</span>
+      </div>
+    </div>
+  <script defer src="script.js"></script>
+</body>
+</html>
